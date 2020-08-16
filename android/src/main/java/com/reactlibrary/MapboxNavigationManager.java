@@ -27,7 +27,7 @@ public class MapboxNavigationManager extends SimpleViewManager<MapboxNavigationV
         mCallerContext.runOnUiQueueThread(new Runnable() {
             @Override
             public void run() {
-                Mapbox.getInstance(mCallerContext, "pk.eyJ1IjoiZW1pbjkzIiwiYSI6ImNrOTFxenJscDAwamgzbm1za3Iya2k1bzgifQ.ub5B7UXS5o9tLyPfXwIyDA");
+                Mapbox.getInstance(mCallerContext, getString(R.string.mapbox_access_token));
             }
         });
     }
